@@ -20,22 +20,19 @@ nav {
   padding: 15px 30px;
   background-color: #992828;
   color: white;
-
-  ul {
-    list-style: none;
-    display: flex;
-    padding-inline-start: 0;
-
-    li {
-      margin: 0 0.75em;
-      text-align: center;
-      font-size: 1.5em;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-      }
-    }
-  }
 }
+nav ul {
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0;
+}
+nav ul li {
+  margin: 0 0.75em;
+  text-align: center;
+  font-size: 1.5em;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
