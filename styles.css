@@ -80,6 +80,7 @@ nav ul li a {
 #aspects {
   display: grid;
   grid-template-columns: 20em 1fr;
+  row-gap: 1.5em;
   margin: 0 7.5em;
 }
 
