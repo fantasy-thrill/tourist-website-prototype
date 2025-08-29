@@ -27,7 +27,7 @@ nav {
     padding-inline-start: 0;
 
     li {
-      margin: 0 0.75em;
+      margin: 0 2em;
       text-align: center;
       font-size: 1.5em;
 
@@ -37,5 +37,72 @@ nav {
         cursor: pointer;
       }
     }
+  }
+}
+
+#intro {
+  background-image: url("https://i.postimg.cc/W1XZwFcf/free-photo-of-a-tropical-resort-in-summer.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: 50% 80%;
+  position: relative;
+  top: 40px;
+}
+
+#intro-text-box {
+  background-color: rgba(185, 50, 30, 0.9);
+  color: white;
+  width: 50%;
+  height: 100%;
+  margin-right: auto;
+  padding: 0 3em 0 4em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    font-size: 4em;
+    margin-top: 0;
+  }
+
+  h4 {
+    font-size: 2em;
+    font-weight: normal;
+  }
+}
+
+#intro-para {
+  color: #fff;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 4em;
+  line-height: 1.5em;
+}
+
+#aspects {
+  display: grid;
+  grid-template-columns: 20em 1fr;
+  margin: 0 7.5em;
+}
+
+.image-ctnr {
+  img {
+    width: 16em;
+  }
+}
+
+.text-ctnr {
+  color: #fff;
+
+  h3 {
+    font-size: 1.5em;
+    margin-block-end: 0.5em;
+  }
+
+  p {
+    font-size: 1.25em;
   }
 }
