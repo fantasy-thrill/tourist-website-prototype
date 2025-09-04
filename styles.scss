@@ -41,19 +41,29 @@ nav {
   }
 }
 
+.dropdown {
+  position: relative;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  font-size: 0.75em;
+  top: 200%;
   left: 0;
   list-style: none;
   margin: 0;
   padding: 0;
   background: #950e0f;
   color: #fff;
+  z-index: 100;
+
+  li {
+    padding: 1em 0;
+  }
 }
 
-.dropdown:hover .dropdown-menu {
+.show {
   display: block;
 }
 

@@ -11,18 +11,18 @@
     <img src="https://i.postimg.cc/7PG4SHbn/tourist-site-logo.png" alt="Visit Taniti logo" id="website-logo">
     <nav>
       <ul>
-        <li><a href="">Events</a></li>
+        <li><a href="#">Events</a></li>
         <li class="dropdown">
-          <a href="" class="dropdown-toggle">Things to Do</a>
+          <a href="#" class="dropdown-toggle">Things to Do</a>
           <ul class="dropdown-menu">
             <li><a href="#">Restaurants</a></li>
             <li><a href="#">Entertainment</a></li>
-            <li><a href="#">Hotels</a></li>
+            <li><a href="#">Beaches</a></li>
             <li><a href="#">Sightseeing</a></li>
           </ul>
         </li>
-        <li><a href="">Places to Stay</a></li>
-        <li><a href="">Book Your Trip</a></li>
+        <li><a href="#">Places to Stay</a></li>
+        <li><a href="#">Book Your Trip</a></li>
       </ul>
     </nav>
   </header>
@@ -96,4 +96,25 @@
     <p>Copyright &copy; 2025, Visit Taniti. This is just a prototype.</p>
   </footer>
 </body>
+<script>
+  const dropdown = document.querySelector(".dropdown")
+  const toggle = dropdown.querySelector(".dropdown-toggle")
+  const menu = dropdown.querySelector(".dropdown-menu")
+
+  let timeoutId;
+
+  function showMenu() {
+    clearTimeout(timeoutId)
+    menu.classList.add("show")
+  }
+
+  function hideMenu() {
+    timeoutId = setTimeout(() => {
+      menu.classList.remove("show")
+    }, 200)
+  }
+
+  dropdown.addEventListener("mouseenter", showMenu)
+  dropdown.addEventListener("mouseleave", hideMenu)
+</script>
 </html>
