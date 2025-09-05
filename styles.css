@@ -153,4 +153,14 @@ footer ul a {
 footer p {
   text-align: right;
   color: #3bc63f;
+}
+
+#subpages-main {
+  max-width: 1200px;
+  margin: 2.5em auto 5em;
+  color: #fff;
+}
+
+.restaurant-summary, .hotel-summary {
+  margin: 2.5em 0;
 }/*# sourceMappingURL=styles.css.map */

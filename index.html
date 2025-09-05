@@ -8,20 +8,22 @@
 </head>
 <body>
   <header>
-    <img src="https://i.postimg.cc/7PG4SHbn/tourist-site-logo.png" alt="Visit Taniti logo" id="website-logo">
+    <a href="/index.html">
+      <img src="https://i.postimg.cc/7PG4SHbn/tourist-site-logo.png" alt="Visit Taniti logo" id="website-logo">
+    </a>
     <nav>
       <ul>
-        <li><a href="#">Events</a></li>
+        <li><a href="/events.html">Events</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle">Things to Do</a>
           <ul class="dropdown-menu">
-            <li><a href="#">Restaurants</a></li>
+            <li><a href="things-to-do/restaurants.html">Restaurants</a></li>
             <li><a href="#">Entertainment</a></li>
             <li><a href="#">Beaches</a></li>
             <li><a href="#">Sightseeing</a></li>
           </ul>
         </li>
-        <li><a href="#">Places to Stay</a></li>
+        <li><a href="places-to-stay.html">Places to Stay</a></li>
         <li><a href="#">Book Your Trip</a></li>
       </ul>
     </nav>
@@ -96,25 +98,5 @@
     <p>Copyright &copy; 2025, Visit Taniti. This is just a prototype.</p>
   </footer>
 </body>
-<script>
-  const dropdown = document.querySelector(".dropdown")
-  const toggle = dropdown.querySelector(".dropdown-toggle")
-  const menu = dropdown.querySelector(".dropdown-menu")
-
-  let timeoutId;
-
-  function showMenu() {
-    clearTimeout(timeoutId)
-    menu.classList.add("show")
-  }
-
-  function hideMenu() {
-    timeoutId = setTimeout(() => {
-      menu.classList.remove("show")
-    }, 200)
-  }
-
-  dropdown.addEventListener("mouseenter", showMenu)
-  dropdown.addEventListener("mouseleave", hideMenu)
-</script>
+<script src="dropdown.js"></script>
 </html>
