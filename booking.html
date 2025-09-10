@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taniti Events</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    main {
+      padding: 2.5em 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="/index.html">
+      <img src="https://i.postimg.cc/7PG4SHbn/tourist-site-logo.png" alt="Visit Taniti logo" id="website-logo">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="/events.html">Events</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle">Things to Do</a>
+          <ul class="dropdown-menu">
+            <li><a href="things-to-do/restaurants.html">Restaurants</a></li>
+            <li><a href="things-to-do/entertainment.html">Entertainment</a></li>
+            <li><a href="things-to-do/beaches.html">Beaches</a></li>
+            <li><a href="things-to-do/sightseeing.html">Sightseeing</a></li>
+          </ul>
+        </li>
+        <li><a href="places-to-stay.html">Places to Stay</a></li>
+        <li><a href="booking.html">Book Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Book your trip to Taniti today!</h1>
+    <form action="" id="booking-form">
+      <div id="booking-inputs">
+        <label for="first-name">First name: </label>
+        <input type="text" id="first-name" name="first-name">
+      
+        <label for="last-name">Last name: </label>
+        <input type="text" id="last-name" name="last-name">
+      
+        <label for="date-of-birth">Date of birth: </label>
+        <input type="date" id="date-of-birth" name="date-of-birth">
+      
+        <label for="phone">Phone number: </label>
+        <input type="tel" id="phone" name="phone">
+      
+        <label for="email">Email address: </label>
+        <input type="email" id="email" name="email">
+      
+        <label for="departure-date">Departure date: </label>
+        <input type="date" id="departure-date" name="departure-date">
+      
+        <label for="return-date">Return date: </label>
+        <input type="date" id="return-date" name="return-date">
+      
+        <label for="passengers">Number of passengers: </label>
+        <input type="number" id="passengers" name="passengers" min="1">
+      
+        <label for="bags">Number of bags: </label>
+        <input type="number" id="bags" name="bags" min="0">
+      </div>
+  
+      <input type="submit" value="Book Flight">
+    </form>
+  </main>
+  <footer>
+    <div id="footer-links">
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms and conditions</a></li>
+      </ul>
+    </div>
+    <p>Copyright &copy; 2025, Visit Taniti. This is just a prototype.</p>
+  </footer>
+</body>
+<script src="dropdown.js"></script>
+
+</html>

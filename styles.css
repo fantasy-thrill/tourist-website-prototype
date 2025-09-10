@@ -163,4 +163,41 @@ footer p {
 
 .restaurant-summary, .hotel-summary, .activity-summary, .beach-summary {
   margin: 2.5em 0;
+}
+
+#booking-form {
+  max-width: 450px;
+  margin: 2.5em auto 0;
+}
+#booking-form input[type=submit] {
+  background-color: #0073e6;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1em;
+  margin: 2em auto;
+  display: block;
+  border-radius: 0.5em;
+  font-size: 1.25em;
+}
+#booking-form input[type=submit]:hover {
+  background-color: #005bb5;
+}
+
+#booking-inputs {
+  display: grid;
+  grid-template-columns: 7.5em 1fr;
+  gap: 1em;
+}
+#booking-inputs label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#booking-inputs input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
